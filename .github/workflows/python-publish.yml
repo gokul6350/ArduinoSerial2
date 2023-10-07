@@ -39,4 +39,4 @@ jobs:
       - name: Publish package to PyPI
         run: |
           python -m pip install twine
-          twine upload --repository pypi dist/* --username gokul6350 --password pypi-AgEIcHlwaS5vcmcCJDA2NmJlMDFiLWMwNTgtNDU3My1hZTAyLWQyZjNiMTMwZjcxZAACKlszLCJhYWU3MzhiZS1jY2Y5LTRkOGQtOWNjNC00ZGQyZjk1NGNmZWQiXQAABiAtIy6S5DpZhjrm4u7vIbzTf_0J3E0UirlzbNywYyB22w
+          twine upload --repository pypi dist/* --username gokul6350 --password pypi-AgEIcHlwaS5vcmcCwdwdwdwddwdNTgtNDU3udvkl6vmnt5rLWQyZjNiMTMwZjcxZAACKlszLCJhYWU3MzhiZS1jY2Y5LTRkOGQtOWNjNC0
