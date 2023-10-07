@@ -1,4 +1,4 @@
-import arduinoserial2 as as2
+import arduinoserial2.arduinoserial2 as as2
 as2.checks()
 print(as2.detect()[0])
 conection=as2.connect()

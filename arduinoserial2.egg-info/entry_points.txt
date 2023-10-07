@@ -1,0 +1,3 @@
+[console_scripts]
+detect-arduino-ports = arduinoserial2.detect_ports:main
+
