@@ -9,4 +9,4 @@ as2.send_data(conection,"Hello")
 as2.read(serial=conection)
 
 
-as2.read_start
+as2.read_start(conection)
