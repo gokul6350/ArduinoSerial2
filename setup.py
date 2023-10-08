@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='arduinoserial2',
-    version='1.0.1',
+    version='1.0.2',
     packages=['arduinoserial2'],
     install_requires=[
         'pyserial',  # Add any dependencies your module requires
