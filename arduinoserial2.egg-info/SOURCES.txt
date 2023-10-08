@@ -1,6 +1,7 @@
 LICENSE
 README.md
 setup.py
+arduinoserial2/__init__.py
 arduinoserial2/arduinoserial2.py
 arduinoserial2.egg-info/PKG-INFO
 arduinoserial2.egg-info/SOURCES.txt

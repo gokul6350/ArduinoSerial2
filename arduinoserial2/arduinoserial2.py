@@ -14,7 +14,11 @@ def detect():
     for port in available_ports:
         if "Arduino" in port.description or "VID:PID=2341:0043" in port.hwid:
             arduino_ports.append(port.device)
-    return arduino_ports
+    if arduino_ports==[]:
+        print("No development board found ")
+        return "None"        
+    else:
+        return arduino_ports
 
 def checks():
     """

@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'detect-arduino-ports=arduinoserial2.detect_ports:main',
+            'detect-arduino-ports=arduinoserial2.detect:main',
         ],
     },
     author='SK Gokulbarath',
