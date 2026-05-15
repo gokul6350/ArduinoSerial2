@@ -1,2 +1,2 @@
 [console_scripts]
-detect-arduino-ports = arduinoserial2.detect:main
+detect-arduino-ports = arduinoserial2.arduinoserial2:main

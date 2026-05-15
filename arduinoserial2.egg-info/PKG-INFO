@@ -1,16 +1,19 @@
 Metadata-Version: 2.4
 Name: arduinoserial2
-Version: 1.0.2
+Version: 1.1.0
 Summary: ArduinoSerial2: Connects Arudino with Computer 
 Home-page: https://github.com/gokul6350/ArduinoSerial2
 Author: SK Gokulbarath
 Author-email: gokul00060@gmail.com
 Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pyserial
@@ -22,6 +25,7 @@ Dynamic: description-content-type
 Dynamic: home-page
 Dynamic: license-file
 Dynamic: requires-dist
+Dynamic: requires-python
 Dynamic: summary
 
 
@@ -31,7 +35,7 @@ This Python library provides a convenient interface for communicating with Ardui
 
 ## Features
 
--   **Auto Detection:** Automatically detects available Arduino (uno R3) boards connected to the computer.
+-   **Cross-Platform Detection:** Detects Arduino and compatible USB-serial boards across macOS, Windows, and Linux.
 -   **Connection Handling:** Easily establish serial connections with detected Arduino boards.
 -   **Data Transmission:** Send data over the serial connection to Arduino boards.
 -   **Data Reception:** Read data from Arduino boards and process it in real-time.
@@ -72,7 +76,7 @@ Available ports: ['/dev/ttyACM0']
 ### 3. Establish Serial Connection
 
 
-#### Method 1 (Recommanded)
+#### Method 1 (Recommended)
 ```python 
 conection=as2.connect(port='/dev/ttyACM0',baud_rate=9600)
 ``` 
@@ -80,7 +84,7 @@ conection=as2.connect(port='/dev/ttyACM0',baud_rate=9600)
 ```python 
 conection=as2.connect()
 ``` 
-##### The above code will automaticaly detect the arduino uno board and will have default baud rate `9600`
+##### The above code auto-detects a connected serial board and uses default baud rate `9600`
 ### 4. Send Data to Arduino
 
 
