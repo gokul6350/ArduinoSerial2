@@ -5,7 +5,7 @@ This Python library provides a convenient interface for communicating with Ardui
 
 ## Features
 
--   **Auto Detection:** Automatically detects available Arduino (uno R3) boards connected to the computer.
+-   **Cross-Platform Detection:** Detects Arduino and compatible USB-serial boards across macOS, Windows, and Linux.
 -   **Connection Handling:** Easily establish serial connections with detected Arduino boards.
 -   **Data Transmission:** Send data over the serial connection to Arduino boards.
 -   **Data Reception:** Read data from Arduino boards and process it in real-time.
@@ -46,7 +46,7 @@ Available ports: ['/dev/ttyACM0']
 ### 3. Establish Serial Connection
 
 
-#### Method 1 (Recommanded)
+#### Method 1 (Recommended)
 ```python 
 conection=as2.connect(port='/dev/ttyACM0',baud_rate=9600)
 ``` 
@@ -54,7 +54,7 @@ conection=as2.connect(port='/dev/ttyACM0',baud_rate=9600)
 ```python 
 conection=as2.connect()
 ``` 
-##### The above code will automaticaly detect the arduino uno board and will have default baud rate `9600`
+##### The above code auto-detects a connected serial board and uses default baud rate `9600`
 ### 4. Send Data to Arduino
 
 
